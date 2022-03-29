@@ -1,0 +1,233 @@
+body {
+    background: linear-gradient(45deg, #000000, #7b7b7be7);
+    text-align: center;
+    color: #ffdbec;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 600px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.171);
+    box-shadow: 0 5px 15px rgb(225, 225, 225);
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(163, 162, 162, 0.289);
+    border-radius: 200px;
+    pointer-events: none;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, rgb(255, 255, 255),
+            rgb(0, 255, 106),
+            rgb(15, 165, 112),
+            rgba(235, 40, 219, 0.904),
+            rgba(140, 1, 253, 0.904));
+    opacity: 30%;
+    border-radius: 200px 40px 200px 40px;
+    animation: animate 20s linear infinite;
+}
+
+h2 {
+    color: rgb(36, 46, 65);
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+}
+
+.board {
+    text-align: center;
+    width: 300px;
+    height: 470px;
+    padding: 30px;
+    border-style: solid;
+    /* border-radius: 40px; */
+    border-radius: 40px 80px 20px 80px;
+    border-width: 10px;
+    border-color: rgba(252, 252, 252, 0.521);
+    margin: auto;
+    background: linear-gradient(10deg, rgb(36, 31, 31),
+            rgb(157, 157, 157),
+            rgba(22, 18, 18, 0.904));
+    box-shadow: 0 5px 15px rgb(225, 225, 225);
+}
+
+td {
+    border: 2px solid rgb(156, 74, 248);
+    height: 100px;
+    width: 100px;
+    border-bottom: 5px solid rgba(8, 107, 237, 0.356);
+    border-right: 5px solid rgba(0, 0, 0, 0.87);
+    position: relative;
+    background: linear-gradient(45deg, rgb(255, 255, 255),
+            rgb(199, 197, 197),
+            rgb(109, 109, 109),
+            rgba(119, 118, 118, 0.904),
+            rgba(27, 27, 27, 0.904));
+    color: black;
+    font-size: 40px;
+    font-family: cursive;
+    transform: scale(0.7);
+    animation: animate 4s linear infinite;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(147, 4, 250, 0.268);
+}
+
+.td1 {
+    color: rgb(0, 0, 0);
+    align-items: center;
+    box-shadow: inset -5px -5px -10px black;
+    position: relative;
+    transform: scale(0.9);
+}
+
+.td1:hover {
+    border: 1px solid rgb(224, 197, 255);
+    height: 100px;
+    width: 100px;
+    border-bottom: 5px solid rgba(8, 107, 237, 0.356);
+    border-right: 5px solid rgba(0, 0, 0, 0.87);
+    position: relative;
+    background: linear-gradient(45deg, rgb(100, 233, 226),
+            rgb(94, 200, 238),
+            rgb(114, 82, 231),
+            rgba(62, 43, 233, 0.904),
+            rgba(45, 31, 163, 0.904));
+    color: rgba(0, 0, 0, 0.987);
+    font-size: 40px;
+    font-family: cursive;
+    transform: scale(0.8);
+    animation: animate 4s linear infinite;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.td2 {
+    background: linear-gradient(45deg, rgb(137, 255, 243),
+            rgb(0, 247, 160),
+            rgb(1, 182, 122),
+            rgba(1, 160, 139, 0.904),
+            rgba(0, 102, 55, 0.904));
+    border: 1px solid rgb(93, 255, 220);
+    color: rgba(253, 253, 253, 0.583);
+    border-radius: 14px;
+    border-bottom: 5px solid rgba(87, 248, 160, 0.356);
+    border-left: 5px solid rgba(118, 247, 111, 0.87);
+    border-top: 5px solid rgba(87, 248, 160, 0.356);
+    border-right: 5px solid rgba(26, 107, 22, 0.87);
+}
+
+.modal button {
+    display: none;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.level {
+    color: white;
+    width: 300px;
+    margin-left: 515px;
+    background: rgba(255, 255, 255, 0.426);
+    border-radius: 400px;
+    box-shadow: 0 5px 15px rgb(225, 225, 225);
+}
+
+.level button {
+    color: black;
+    background-color: rgba(255, 255, 249, 0.796);
+    border-radius: 10px 40px 10px 40px;
+    box-shadow: 0 1px 10px 10px rgba(254, 255, 255, 0.296);
+    border-color: rgb(8, 134, 202);
+    background: linear-gradient(45deg, rgba(137, 1, 191, 0.501),
+            rgba(255, 255, 255, 0.303),
+            rgb(243, 243, 245),
+            rgba(252, 252, 252, 0.309),
+            rgba(133, 2, 240, 0.795));
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.timer {
+    border-color: rgb(8, 134, 202);
+    background: linear-gradient(45deg, rgba(137, 1, 191, 0.501),
+            rgba(255, 255, 255, 0.303),
+            rgb(243, 243, 245),
+            rgba(252, 252, 252, 0.309),
+            rgba(133, 2, 240, 0.795));
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    margin-top: 190px;
+    margin-right: 300px;
+    border-radius: 10px 40px 10px 40px;
+    font-size: 18px;
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(2, 1, 1);
+    border-color: rgba(247, 246, 246, 0.529);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 5px 15px rgba(100, 1, 170, 0.678);
+}
+
+@keyframes animate {
+    10% {
+        transform: rotate(-4deg);
+    }
+
+    10% {
+        transform: rotate(-4deg);
+    }
+
+    20% {
+        transform: rotate(4deg);
+    }
+}
+
+    /* .modal {
+    border-color: rgb(8, 134, 202);
+    background: linear-gradient(45deg, rgba(137, 1, 191, 0.501),
+            rgba(255, 255, 255, 0.303),
+            rgb(243, 243, 245),
+            rgba(252, 252, 252, 0.309),
+            rgba(133, 2, 240, 0.795));
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    margin-top: 190px;
+    margin-right: 300px;
+    border-radius: 10px 40px 10px 40px;
+    font-size: 18px;
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(2, 1, 1);
+    border-color: rgba(247, 246, 246, 0.529);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 5px 15px rgba(100, 1, 170, 0.678);
+    /* } */

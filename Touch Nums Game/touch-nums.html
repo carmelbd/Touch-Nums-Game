@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In picture Game!</title>
+    <link rel="stylesheet" href="css/touch-nums.css">
+</head>
+
+<body onload="initGame(16)">
+    <h1>Touch nums Game! <br>
+        lets play... ;)</h1>
+        <h3>Click on all the nums from 1 to the largest num in the shortest time!</h2>
+    <!-- <h2>lest play</h2> -->
+    <div class="level">
+        <button id="1" class="easy" onclick="changeLevel(this)">Easy</button>
+        <button id="2" class="medium" onclick="changeLevel(this)">Medium</button>
+        <button id="3" class="hard" onclick="changeLevel(this)">Hard</button>
+
+    </div>
+
+    <div class="board">
+        <table></table>
+    </div>
+    <div class="modal">
+        <!-- <button onclick="closeModal()">x</button> -->
+        <input class="timer" type="text" id="timer" value=""></input>
+    </div>
+
+    <script src="js/touch-nums.js"></script>
+
+</body>
+
+</html>
